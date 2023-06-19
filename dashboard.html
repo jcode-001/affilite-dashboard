@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- link to css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <aside id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="top">
+            <img src="img/logo2.png" alt="affilite brand logo" class="logo" />
+            <h1>Affilite</h1>
+          </div>
+          <h3>Affiliate</h3>
+          <a href="#">Affiliate Dashboard</a>
+          <a href="#">Market Place</a>
+          <a href="#">Top Affiliates</a>
+          <a href="#">Find Contest</a>
+          <a href="#">Approved Product</a>
+        </aside>
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+          >&#9776;</span
+        >
+      </div>
+      <!-- icons at the right -->
+      <div class="icon-box icon-box1">
+        <div class="icon notify">
+          <img src="img/notification-bell.svg" alt="" />
+          <span id="notify-value" class="red-dot"></span>
+        </div>
+        <div class="icon user-icon">T</div>
+        <div class="icon"></div>
+      </div>
+    </header>
+    <section class="content df" id="affiliate-dashboard">
+      <div class=" space df">
+        <div>
+          <h1><span id="greet"></span><span id="name-box">usetr\\r</span></h1>
+          <p class="small">
+            Hello Boss, let,s review our sales process and set up for the Night
+            sales
+          </p>
+        </div>
+        <div class="icon-box icon-box2">
+          <div class="icon notify">
+            <img src="img/notification-bell.svg" alt="" />
+            <span id="notify-value" class="red-dot"></span>
+          </div>
+          <div class="df profile-box">
+            <div class="icon user-icon">T</div>
+            <div class="df name-title">
+                <h3 id="username">Username</h3>
+                <small class="fade">AFFILIATE</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-section">
+        <div class="grid-box">
+          <div class="df box gap">
+            <img src="img/total-earns.svg" alt="" class="small-img" />
+            <p class="center">Total Earnings</p>
+          </div>
+          <div class="box">
+            <p class="amount">$0</p>
+            <small class="fade">Updated few minutes ago</small>
+          </div>
+        </div>
+
+        <div class="grid-box box2">
+          <div class="df box gap">
+            <img src="img/number-sales.svg" alt="" class="small-img" />
+            <p class="center">Number of sales</p>
+          </div>
+          <div class="box">
+            <p class="amount">0</p>
+            <small class="fade">Updated few minutes ago</small>
+          </div>
+        </div>
+
+        <div class="rank-box df">
+          <div class="df">
+            <img src="img/Junior-badge.svg" alt="" class="badge-icon" />
+            <div class="df title-position-box">
+              <small class="fade">Affiliate Rank</small>
+              <h3 class="level-rank">Junior</h3>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="ml">
+              <p><small class="fade">New payout</small></p>
+              <small class="fade green amount">$ 0</small>
+            </div>
+            <div class="date-time df">
+              <div>
+                <small class="fade">Date</small>
+                <p>13/06/2023</p>
+              </div>
+              <div>
+                <small class="fade">Time</small>
+                <p>09:24pm</p>
+              </div>
+            </div>
+          </div>
+
+          <input type="submit" value="Request Payout" class="request-btn" />
+        </div>
+
+        <div class="grid-box box4">
+          <div class="space box df">
+            <div class="top">
+              <img src="img/medal.svg" alt="" class="small-img" />
+              <div class="text-box">
+                <small class="fade">Product of the day</small>
+                <p>Ultimate Affiliate Marketing Program + DFY Sales...</p>
+              </div>
+            </div>
+            <span class="end">Sales</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
